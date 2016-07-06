@@ -1,0 +1,88 @@
+Revision Control & File Sharing:
+  git - version control system
+  GitHub - Code sharing and collaboration platform
+
+Text Editors:
+  Atom - Simple text editor created by GitHub
+    Note: like a reimagined emacs, not a rich text editor like word
+  Brackets -
+  Sublime -
+  Vim -
+  Emacs -
+  Notepad++ -
+
+Purpose:
+	Learning how to use GIT which has two versions:
+    Git BASH (Linux Style Command Line) and
+    Git GUI (Windows Style Graphical User Interface)
+	Also learning to use GITHUB which has two versions:
+    Git Shell (Command Line) and
+    GitHub (Graphical User Interface)
+
+	Note: GIT seems to allow for more Linux based commands while GITHUB seems to allow for more windows based commands
+
+Git Features:
+  Online/Offline
+    Can be used online/offline.
+  Version Control
+    Commit - one version of the file
+      Saves the current file as a new version
+    	New document versions are saved manually
+    	Creating a new document versions is referred to as a commit
+    	Commits should be commented to explain what was changed in the new version
+    	One Commit Per Logical Change:
+      	The amount of changes between commits should not be to large (i.e. hard to keep track of all the changes)
+      	New commits should be easy to follow and understand what has changed.
+      	The commit message should explain the single logical change that was made
+      The number of commits can be very large
+      Each commit will have a Commit ID, Author, Date, and Comments
+      Example Commit ID: b0678b161fcf74467ed3a63110557e3d6229cfa6
+    Repository - Tracking across multiple files
+    	All files in the repository are saved when a commit is made for any one of them
+      Location: The git repository is stored in the .git directory
+        (dot files/folders are often hidden by the operating system)
+
+  3 Main Sections of git
+    Working Directory - A single checkout of one version of the project
+
+    Staging Area
+
+
+    .git directory
+
+Git Commands:
+    git log - returns a list of all the commits with their Commit ID,
+             Author, Date, and Comments
+         Example: git log
+         Note 1: Press q to quit
+         Note 2: "log" will only show commits prior to the current HEAD
+
+    git diff - Shows differences between 2 versions  (commits) of a file
+         Example 1: git diff <commit_id_older> <commit_id_newer>
+         Example 2: git diff -u <commit_id_older> <commit_id_newer>
+         Note: For colored diff, git config --global color.ui auto
+
+    git clone - makes a copy of a repository
+         Example: git clone https://github.com/udacity/asteroids.git
+
+    git checkout - Converts all files to the state they were in
+         during the chosen commit.  Think of it as checking out a specific version of the files
+         Example: git checkout b0678b161fcf74467ed3a63110557e3d6229cfa6
+         Note 1: Whichever commit you checkout becomes the new HEAD
+         Note 2: "log" will only show commits prior to the current HEAD
+
+    git init - Initialize (Create) a new repository
+      The directory that you run git init in becomes the home directory for that repository.
+      The .git directory will be created in the directory where git init is ran
+
+    git status - Returns  the status of the git repository
+      Provide info on branch status, commit status, files tracked/untracked
+
+    git add <filename> - add file or files to the staging area so they can be added at the next commit
+      Example: git add index.c
+      Example: git add *.c
+    git add <directory> - recursively adds all the files in the directory
+      Example: git add css
+
+
+Git Bash Layout/Formatting
