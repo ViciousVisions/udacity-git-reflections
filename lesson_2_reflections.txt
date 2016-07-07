@@ -1,0 +1,3 @@
+When you use git init, you are initializing a new repository.
+
+The Staging area is different from the working directory and the repository, because it is used to move files from untracked to tracked and allow for them to be committed.  This allows you to add additional files to the repository and allows you to take action when you think about it instead of having to remember later when you make a commit. 
