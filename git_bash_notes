@@ -72,10 +72,11 @@ Git Commands:
 
     git checkout - Converts all files to the state they were in
          during the chosen commit.  Think of it as checking out a specific version of the files
-         Example: git checkout b0678b161fcf74467ed3a63110557e3d6229cfa6
+         Example 1: git checkout b0678b161fcf74467ed3a63110557e3d6229cfa6
          Note 1: Whichever commit you checkout becomes the new HEAD
          Note 2: "log" will only show commits prior to the current HEAD
-
+         Example 2: git checkout <branch_name>
+          Makes the current branch the head
     git init - Initialize (Create) a new repository
       The directory that you run git init in becomes the home directory for that repository.
       The .git directory will be created in the directory where git init is ran
@@ -89,5 +90,11 @@ Git Commands:
     git add <directory> - recursively adds all the files in the directory
       Example: git add css
 
+    git branch - commits are allowed to progess down different labels.
+        These labels are called branches.
+      Example 1: git branch
+        Returns all the available branches.
+      Example 2: git branch <new_branch_name>
+        Creates a new branch
 
 Git Bash Layout/Formatting
