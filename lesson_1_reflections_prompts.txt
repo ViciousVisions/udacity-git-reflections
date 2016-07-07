@@ -1,0 +1,40 @@
+Learning version control methods and techniques.  
+I was already familiar with the basic benifits of version control, 
+but I am doing this to take advantage of the benifits of reflection as referenced as follows: 
+
+https://sites.google.com/site/reflection4learning/why-reflect
+
+This should also give me a chance to get familiar with Sublime Text and refresh linux command line inputs.
+
+In the first leason I used the windows command promt (cmd) to compare game_old.js and game_new.js in order to find a typo.  
+I used the command FC (file compare) to find the difference.  I entered "FC game_new.js game_old.js". 
+In unix the same thing could have been done with diff -u instead.
+
+Reflect: Using History for Efficiency
+Save time debugging code
+Determing changes someone else made
+Freedom to explore other options without worrying about losing the current version
+
+Reflect: Manual Commits - Pros and Cons
+Pros
+     Allow for version control checkpoints that make sense
+     Encourages you to focus on one change at a time
+     Makes collaborating easier
+     Makes it easier to merge to versions together
+     Makes it easier to remove sections
+     Makes it easier to find bugs 
+
+Cons
+     Can interrupts you workflow / chain of thought
+     Can forget to make commits
+     Not as condusive to working styles that bounce around
+
+Reflect: Multi-File Commits
+When files are potentially dependant on information in other files, it is prodent to track them together for puroses of revision control
+
+Reflect: Using Git to View History
+git log returns the list of commits to choose from and gif diff shows the difference between two commits
+
+Reflect: Confidence from Version Control
+Version control gives you more confidence in making changes and experimenting.
+These things can be done along a seperate branch or reverted along the same branch
