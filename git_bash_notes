@@ -51,11 +51,13 @@ Git Features:
     .git directory
 
 Git Commands:
-    git log - returns a list of all the commits with their Commit ID,
-             Author, Date, and Comments
-         Example: git log
-         Note 1: Press q to quit
-         Note 2: "log" will only show commits prior to the current HEAD
+    git log
+        Example: git log
+          returns a list of all the commits with their Commit ID, Author, Date, and Comments
+        Example 2: git log --graph --oneline <branch1> <branch2>
+          Add vertical lines showing the branching paths
+        Note 1: Press q to quit
+        Note 2: "log" will only show commits prior to the current HEAD
 
     git diff <commit_id_older> <commit_id_newer>
         Example 1: git diff <commit_id_older> <commit_id_newer>
@@ -77,6 +79,11 @@ Git Commands:
          Note 2: "log" will only show commits prior to the current HEAD
          Example 2: git checkout <branch_name>
           Makes the current branch the head
+        Example 3: git checkout -b <new_branch_name>
+          Creates a new branch and checks it out.  Equivalent  to the following 2 commands:
+            git branch <new_branch_name>
+            git checkout <new_branch_name>
+
     git init - Initialize (Create) a new repository
       The directory that you run git init in becomes the home directory for that repository.
       The .git directory will be created in the directory where git init is ran
