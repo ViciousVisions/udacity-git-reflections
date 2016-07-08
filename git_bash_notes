@@ -56,6 +56,8 @@ Git Commands:
           returns a list of all the commits with their Commit ID, Author, Date, and Comments
         Example 2: git log --graph --oneline <branch1> <branch2>
           Add vertical lines showing the branching paths
+        Example 3: git log -n 1
+          -n stands for number of commits to be shown, in this case 1.
         Note 1: Press q to quit
         Note 2: "log" will only show commits prior to the current HEAD
 
@@ -104,4 +106,12 @@ Git Commands:
       Example 2: git branch <new_branch_name>
         Creates a new branch
 
+    git show <commit_id>
+      Shows the diff between a commit and its parent.  Useful when two branches have been merged and there are commits from the other branch in between the commit and its parent.
+
+    git merge checked_out_branch_name branch_name_to_be_merged_in
+      Merges a branch with the currently checked out branch
+      Note 1: if the checked out branch is the master then the other branched will be merged into the master (becoming part of the master).
+      Note 2: If the checked out branch was an experimental branch and the other branch was the master then the master will be merged into the experimental branch.  (Keeping the experimental branch up to date with changes in the master, but the master will still not have the experimental changes.)
+      
 Git Bash Layout/Formatting
