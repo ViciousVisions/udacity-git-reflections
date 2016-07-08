@@ -9,3 +9,5 @@ Branches would be useful when you want to experiment without messing up the mast
 Diagrams allow you to visualize the branch paths
 
 When you merge two branches together they are automatically combined if there is no conflict.  If there is a conflict they have to be manually combined.  The second branch_name is merged into the first branch_name and the two sets of commits are sorted by date/time created.  We represented this using branch diagrams to visualize the splitting, existence and merging of branches.
+
+The advantages of automatic merging are speed and convenience while manual merging can handle a larger level of complexity and offers more control on how they are merged
