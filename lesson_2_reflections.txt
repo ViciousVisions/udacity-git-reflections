@@ -7,3 +7,5 @@ The staging area can be use to selectively choose what goes into each commit thu
 Branches would be useful when you want to experiment without messing up the master branch.  When you want to maintain multiple versions of the code (ie 1 version for older phones and one version for newer phones)
 
 Diagrams allow you to visualize the branch paths
+
+When you merge two branches together they are automatically combined if there is no conflict.  If there is a conflict they have to be manually combined.  The second branch_name is merged into the first branch_name and the two sets of commits are sorted by date/time created.  We represented this using branch diagrams to visualize the splitting, existence and merging of branches.
