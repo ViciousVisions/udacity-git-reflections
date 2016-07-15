@@ -1,25 +1,15 @@
 Revision Control & File Sharing:
   git - version control system
+    Free open source
   GitHub - Code sharing and collaboration platform
-
-Text Editors:
-  Atom - Simple text editor created by GitHub
-    Note: like a reimagined emacs, not a rich text editor like word
-  Brackets -
-  Sublime -
-  Vim -
-  Emacs -
-  Notepad++ -
+    Open source
+      Free public repositories
+      Paid private repositories
 
 Purpose:
-	Learning how to use GIT which has two versions:
-    Git BASH (Linux Style Command Line) and
-    Git GUI (Windows Style Graphical User Interface)
-	Also learning to use GITHUB which has two versions:
-    Git Shell (Command Line) and
-    GitHub (Graphical User Interface)
-
-	Note: GIT seems to allow for more Linux based commands while GITHUB seems to allow for more windows based commands
+	Learn revision control system (RCS) / source control management (scm)
+    Part 1) Software that does rcs/scm (e.g. git)
+    Part 2) Software to provide group and/or remote access to repositories (e.g. GitHub)
 
 Git Features:
   Online/Offline
@@ -113,5 +103,67 @@ Git Commands:
       Merges a branch with the currently checked out branch
       Note 1: if the checked out branch is the master then the other branched will be merged into the master (becoming part of the master).
       Note 2: If the checked out branch was an experimental branch and the other branch was the master then the master will be merged into the experimental branch.  (Keeping the experimental branch up to date with changes in the master, but the master will still not have the experimental changes.)
-      
+
+    git remote add <chosen remote repository name> <https: remote repository address>
+      - creates a name used to reference/connect a remote repository
+      Ex 1: git remote add origin https://github.com/ViciousVisions/udacity-git-reflections.git
+        Note 1: If you only have 1 remote it is standard to name it "origin"
+        Note 2: the address seems to be the webpage address plus ".git"
+        Note 3: When a new repository is created in GitHUB it tells you what the address is
+      Ex 2: git remote
+        - list the names of the remotes that are connected
+      Ex 3: git remote -v
+        - verbose output gives remote name push/fetch locations
+
+    git push <name_used_to_refer_to_the_repository> <branch_name>
+      - takes a branch from your local repository and sends it to the
+
+
 Git Bash Layout/Formatting
+
+
+Software:
+  Git based rcs/scm:
+    Git Command Line:
+      Git BASH (Linux Style Command Line)
+      Git Shell (Windows Style Command Line)
+    Git with GUI
+      Git GUI (Windows Style Graphical User Interface):
+      GitHub Desktop
+      GitEYE
+      GitKraken
+      SourceTree
+      Git Extensions
+      Giggle
+      SmartGit
+      Tower
+      (many others)
+
+	Git based repositories/servers
+    GitHub -
+      Public Repositories: free
+      Private Repositories: paid monthly
+      Space: unlimited
+      Host your own server: no
+    GitLab
+      Public Repositories: free
+      Private Repositories: free
+      Space: unlimited
+      Host your own server: free
+    BitBucket
+      Public Repositories: free
+      Private Repositories: paid monthly
+      Space: unlimited
+      Host your own server: $10 purchase price for small team
+
+  Code Searching Software
+    SourceGraph - Search personal and public code (primarily GitHub)
+
+  Text Editors:
+    Atom - Simple text editor created by GitHub
+      Note: like a reimagined emacs, not a rich text editor like word
+    Brackets -
+    Sublime -
+    Vim -
+    Emacs -
+    Notepad++ -
