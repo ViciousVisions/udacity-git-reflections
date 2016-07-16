@@ -16,4 +16,4 @@ What is the benefit of having a copy of the last known state of the remote store
   Allow for checking of conflicts and let you know where you last matched the remote
 
 How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
-  In person or via email.  In person you can get minor things done faster but major changes would be harder to handle.  Undoing changes, finding bugs, and managing multiple versions would also be harder.  In person should also make you more nervous to let someone else touch your code.  It could also make you less willing to alter your code.
+  In person or via email.  In person you can get minor things done faster but major changes would be harder to handle.  Undoing changes, finding bugs, and managing multiple versions would also be harder.  In person should also make you more nervous to let someone else touch your code.  It could also make you less willing to alter your code. There would be no git commit messages to refer to later.
