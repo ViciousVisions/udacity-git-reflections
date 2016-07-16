@@ -88,20 +88,32 @@ Git Commands:
     git add <directory> - recursively adds all the files in the directory
       Example: git add css
 
-    git branch - commits are allowed to progess down different labels.
+    git branch - commits are allowed to progress down different labels.
         These labels are called branches.
       Example 1: git branch
         Returns all the available branches.
       Example 2: git branch <new_branch_name>
         Creates a new branch
+      Note 1: Branch naming convintions
+        one name -> branch name
+        name1/name2 -> remote_name/branch_name (e.g. origin/master)
+          this combo branch name is placed on the local commit to represent the
+          last known remote commit with that branch name
 
     git show <commit_id>
-      Shows the diff between a commit and its parent.  Useful when two branches have been merged and there are commits from the other branch in between the commit and its parent.
+      Shows the diff between a commit and its parent.  Useful when two branches
+      have been merged and there are commits from the other branch in between
+      the commit and its parent.
 
     git merge checked_out_branch_name branch_name_to_be_merged_in
       Merges a branch with the currently checked out branch
-      Note 1: if the checked out branch is the master then the other branched will be merged into the master (becoming part of the master).
-      Note 2: If the checked out branch was an experimental branch and the other branch was the master then the master will be merged into the experimental branch.  (Keeping the experimental branch up to date with changes in the master, but the master will still not have the experimental changes.)
+      Note 1: if the checked out branch is the master then the other branched
+              will be merged into the master (becoming part of the master).
+      Note 2: If the checked out branch was an experimental branch and the
+              other branch was the master then the master will be merged into
+              the experimental branch.  (Keeping the experimental branch up to
+              date with changes in the master, but the master will still not
+              have the experimental changes.)
 
     git remote add <chosen remote repository name> <https: remote repository address>
       - creates a name used to reference/connect a remote repository
@@ -119,6 +131,7 @@ Git Commands:
 
     git pull <name_used_to_refer_to_the_repository> <branch_name>
       - takes a branch from your chosen repository and brings it to the current repository
+
 
 Git Bash Layout/Formatting
 
