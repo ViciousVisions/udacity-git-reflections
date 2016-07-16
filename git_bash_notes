@@ -9,7 +9,8 @@ Revision Control & File Sharing:
 Purpose:
 	Learn revision control system (RCS) / source control management (scm)
     Part 1) Software that does rcs/scm (e.g. git)
-    Part 2) Software to provide group and/or remote access to repositories (e.g. GitHub)
+    Part 2) Software to provide group and/or remote access to repositories
+            (e.g. GitHub)
 
 Git Features:
   Online/Offline
@@ -21,14 +22,16 @@ Git Features:
     	Creating a new document versions is referred to as a commit
     	Commits should be commented to explain what was changed in the new version
     	One Commit Per Logical Change:
-      	The amount of changes between commits should not be to large (i.e. hard to keep track of all the changes)
+      	The amount of changes between commits should not be to large
+          (i.e. hard to keep track of all the changes)
       	New commits should be easy to follow and understand what has changed.
-      	The commit message should explain the single logical change that was made
+      	The commit message should explain the single logical change
       The number of commits can be very large
       Each commit will have a Commit ID, Author, Date, and Comments
       Example Commit ID: b0678b161fcf74467ed3a63110557e3d6229cfa6
     Repository - Tracking across multiple files
-    	All files in the repository are saved when a commit is made for any one of them
+    	All files in the repository are saved when a commit is made for any one
+        of them
       Location: The git repository is stored in the .git directory
         (dot files/folders are often hidden by the operating system)
 
@@ -42,7 +45,8 @@ Git Features:
 Git Commands:
     git log
         Example: git log
-          returns a list of all the commits with their Commit ID, Author, Date, and Comments
+          returns a list of all the commits with their Commit ID, Author, Date,
+          and Comments
         Example 2: git log --graph --oneline <branch1> <branch2>
           Add vertical lines showing the branching paths
         Example 3: git log -n 1
@@ -54,7 +58,8 @@ Git Commands:
         Example 1: git diff <commit_id_older> <commit_id_newer>
           Shows differences between 2 versions  (commits) of a file
         Example 2: git diff
-          Compares the files in the "working directory" with the files in the "staging area"
+          Compares the files in the "working directory" with the files in the
+          "staging area"
         Example 3: git diff --staged
           Compares the files in the "staging area" with the head of  the commits
           Note: --staged = --cached
@@ -64,25 +69,29 @@ Git Commands:
          Example: git clone https://github.com/udacity/asteroids.git
 
     git checkout - Converts all files to the state they were in
-         during the chosen commit.  Think of it as checking out a specific version of the files
-         Example 1: git checkout b0678b161fcf74467ed3a63110557e3d6229cfa6
-         Note 1: Whichever commit you checkout becomes the new HEAD
-         Note 2: "log" will only show commits prior to the current HEAD
-         Example 2: git checkout <branch_name>
+        during the chosen commit.  Think of it as checking out a specific
+          version of the files
+        Example 1: git checkout b0678b161fcf74467ed3a63110557e3d6229cfa6
+        Note 1: Whichever commit you checkout becomes the new HEAD
+        Note 2: "log" will only show commits prior to the current HEAD
+        Example 2: git checkout <branch_name>
           Makes the current branch the head
         Example 3: git checkout -b <new_branch_name>
-          Creates a new branch and checks it out.  Equivalent  to the following 2 commands:
+          Creates a new branch and checks it out.
+          Equivalent  to the following 2 commands:
             git branch <new_branch_name>
             git checkout <new_branch_name>
 
     git init - Initialize (Create) a new repository
-      The directory that you run git init in becomes the home directory for that repository.
+      The directory that you run git init in becomes the home directory for
+        that repository.
       The .git directory will be created in the directory where git init is ran
 
     git status - Returns  the status of the git repository
       Provide info on branch status, commit status, files tracked/untracked
 
-    git add <filename> - add file or files to the staging area so they can be added at the next commit
+    git add <filename> - add file or files to the staging area so they can be
+        added at the next commit
       Example: git add index.c
       Example: git add *.c
     git add <directory> - recursively adds all the files in the directory
@@ -115,22 +124,25 @@ Git Commands:
               date with changes in the master, but the master will still not
               have the experimental changes.)
 
-    git remote add <chosen remote repository name> <https: remote repository address>
+    git remote add <chosen remote repository name> <remote repository address>
       - creates a name used to reference/connect a remote repository
-      Ex 1: git remote add origin https://github.com/ViciousVisions/udacity-git-reflections.git
+      Ex 1: git remote add origin https://github.com/VicVis/reflections.git
         Note 1: If you only have 1 remote it is standard to name it "origin"
         Note 2: the address seems to be the webpage address plus ".git"
-        Note 3: When a new repository is created in GitHUB it tells you what the address is
+        Note 3: When a new repository is created in GitHUB it tells you what
+          the address is
       Ex 2: git remote
         - list the names of the remotes that are connected
       Ex 3: git remote -v
         - verbose output gives remote name push/fetch locations
 
     git push <name_used_to_refer_to_the_repository> <branch_name>
-      - takes a branch from your current repository and sends it to the chosen repository
+      - takes a branch from your current repository and
+        sends it to the chosen repository
 
     git pull <name_used_to_refer_to_the_repository> <branch_name>
-      - takes a branch from your chosen repository and brings it to the current repository
+      - takes a branch from your chosen repository and
+        brings it to the current repository
 
 
 Git Bash Layout/Formatting
