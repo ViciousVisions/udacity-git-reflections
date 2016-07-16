@@ -136,6 +136,13 @@ Git Commands:
       Ex 3: git remote -v
         - verbose output gives remote name push/fetch locations
 
+    git fetch <remote_name> <branch_name>
+      Adds the remote branch to the local repository with the local branch name
+        remote_name/branch_name. If there is a conflict it is added as a new
+        branch.
+      Ex 1: git fetch origin master
+        branch will be named origin/master
+
     git push <name_used_to_refer_to_the_repository> <branch_name>
       - takes a branch from your current repository and
         sends it to the chosen repository
@@ -143,7 +150,7 @@ Git Commands:
     git pull <name_used_to_refer_to_the_repository> <branch_name>
       - takes a branch from your chosen repository and
         brings it to the current repository
-
+      Note 1: git pull is the equivalent of git fetch followed by git merge
 
 Git Bash Layout/Formatting
 
