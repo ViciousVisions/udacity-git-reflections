@@ -11,5 +11,6 @@ Describe the differences between forks, clones, and branches. When would you use
     Use when you want to work on a repository remotely
   Branch - a path within a git repository (git command)
     Use when you want to deviate from the current branch but still have the ability to sync and merge
-    
-    
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+  Allow for checking of conflicts and let you know where you last matched the remote
