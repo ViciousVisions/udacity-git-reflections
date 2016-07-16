@@ -152,6 +152,23 @@ Git Commands:
         brings it to the current repository
       Note 1: git pull is the equivalent of git fetch followed by git merge
 
+    git status
+      Gives the status of your staging area and working directory.
+        Unmerged conflicts would be shown.
+        What needs to be committed would be shown.
+        What has been modified but not added or committed
+      Ex 1: output from git status
+        On branch master
+        Changes not staged for commit:
+          (use "git add <file>..." to update what will be committed)
+          (use "git checkout -- <file>..." to discard changes in working directory)
+
+                modified:   git_bash_notes
+
+        no changes added to commit (use "git add" and/or "git commit -a")
+
+
+
 Git Bash Layout/Formatting
 
 
