@@ -65,21 +65,19 @@ Git Features:
     * .git
       - directory/server where repository is stored
 
-Git Behavior:
-  Git commands affect the branch that is currently checked out.  If a command takes
-  two branches, the order that the branches are entered doesn't matter. Example,
+git Behavior:
+-------------
 
-  Example 1: If the master branch is checked out then
-    git merge master add_cloud_storage
-  would merge the changes from add_cloud_storage into the master. This is what
-  you would do if you wanted to add a new feature to the main code.
-
-  Example 2: If the add_cloud_storage branch is checked out then
-    git merge master add_cloud_storage
-  would merge the changes from master into the add_cloud_storage branch. This is
-  what you would do if you wanted to keep your alternate branch up to date with
-  all the officially accepted changes from your master code.
-
+* git commands affect the branch that is currently checked out.  
+  + If a command takes two branches, the order that the branches are entered doesn't matter.
+    - Example 1: If the master branch is checked out then
+    > git merge master add_cloud_storage
+    - would merge the changes from add_cloud_storage into the master.
+  + This is what you would do if you wanted to add a new feature to the main code.
+    - Example 2: If the add_cloud_storage branch is checked out then
+    > git merge master add_cloud_storage
+    - This would merge the changes from master into the add_cloud_storage branch.
+    - This is what you would do if you wanted to keep your alternate branch up to date with all the officially accepted changes from your master code.
 
 Git Commands:
     git log
