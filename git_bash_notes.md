@@ -34,35 +34,36 @@ Learn Revision Control System (RCS) / Source Control Management (SCM)
     * (e.g. GitHub)
 
 Git Features:
+-------------
+1. **Online Offline**
+  * Can be used online/offline.
 
-  Online/Offline
-    Can be used online/offline.
-  Version Control
-    Commit - one version of the file
-      Saves the current file as a new version
-    	New document versions are saved manually
-    	Creating a new document versions is referred to as a commit
-    	Commits should be commented to explain what was changed in the new version
-    	One Commit Per Logical Change:
-      	The amount of changes between commits should not be to large
-          (i.e. hard to keep track of all the changes)
-      	New commits should be easy to follow and understand what has changed.
-      	The commit message should explain the single logical change
-      The number of commits can be very large
-      Each commit will have a Commit ID, Author, Date, and Comments
-      Example Commit ID: b0678b161fcf74467ed3a63110557e3d6229cfa6
-    Repository - Tracking across multiple files
-    	All files in the repository are saved when a commit is made for any one
-        of them
-      Location: The git repository is stored in the .git directory
-        (dot files/folders are often hidden by the operating system)
+2. **Version Control**
+  * Commit: one version of the file
+    + Saves the current file as a new version
+    + New document versions are saved manually
+    + Creating a new document versions is referred to as a commit
+    + Commits should be commented to explain what was changed
+    + One Commit Per Logical Change:
+      - The amount of changes between commits should not be to large
+        (i.e. hard to keep track of all the changes)
+      - New commits should be easy to follow and understand what has changed.
+      - The commit message should explain the single logical change
+    + The number of commits can be very large
+    + Each commit will have a Commit ID, Author, Date, and Comments
+      - Example Commit ID: b0678b161fcf74467ed3a63110557e3d6229cfa6
+  * Repository: Tracking across multiple files
+    + All files in the repository are saved whenever something is commit
+    + Location: The git repository is stored in the .git directory
+      - (dot files/folders are often hidden by the operating system)
 
-  3 Main Sections of git
-    Working Directory - A single checkout of one version of the project
-
-    Staging Area - Contains information abou what will go into the next commit
-
-    .git - directory/server where repository is stored
+  * Three Main Sections of git
+    * Working Directory
+      - A single checkout of one version of the project
+    * Staging Area
+      - Contains information abou what will go into the next commit
+    * .git
+      - directory/server where repository is stored
 
 Git Behavior:
   Git commands affect the branch that is currently checked out.  If a command takes
